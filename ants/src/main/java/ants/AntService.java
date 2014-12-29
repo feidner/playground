@@ -1,4 +1,4 @@
-package hfe;
+package ants;
 
 import java.awt.Point;
 import java.util.HashSet;

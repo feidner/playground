@@ -1,4 +1,4 @@
-package hfe;
+package ants;
 
 import java.awt.Color;
 import java.awt.Component;
