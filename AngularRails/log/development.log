@@ -1,0 +1,141 @@
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+  [1m[36m (6.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (5.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-03-18 13:38:46 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 16:29:00 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 732ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap/glyphicons-halflings-regular.woff2 )` to `config/initializers/assets.rb` and restart your server
+  (in C:/a_local/git/playground/AngularRails/app/assets/stylesheets/application.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>AngularRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__58442161_92187020'
+
+
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (15.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (72.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 16:38:39 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 136ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap/glyphicons-halflings-regular.woff2 )` to `config/initializers/assets.rb` and restart your server
+  (in C:/a_local/git/playground/AngularRails/app/assets/stylesheets/application.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>AngularRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__58442161_92187020'
+
+
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (43.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 16:39:50 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 200ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap/glyphicons-halflings-regular.woff2 )` to `config/initializers/assets.rb` and restart your server
+  (in C:/a_local/git/playground/AngularRails/app/assets/stylesheets/application.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>AngularRails</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__58442161_92187020'
+
+
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/a_local/ruby/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (44.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-19 16:40:41 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2548ms (Views: 2547.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-965d937ed25e5bebc97566dc2b65c3f6.css?body=1" for ::1 at 2015-03-19 16:40:43 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-19 16:40:43 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-19 16:40:43 +0100
+
+
+Started GET "/assets/angular/angular-ebd9269b31100c3cada233d21d55462c.js?body=1" for ::1 at 2015-03-19 16:40:43 +0100
+
+
+Started GET "/assets/app-6e605a0e353699d44a754125d4bce61b.js?body=1" for ::1 at 2015-03-19 16:40:43 +0100
+
+
+Started GET "/assets/application-1c475806093e6242dac1cf338af247b4.js?body=1" for ::1 at 2015-03-19 16:40:44 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 96ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-965d937ed25e5bebc97566dc2b65c3f6.css?body=1" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+
+
+Started GET "/assets/angular/angular-ebd9269b31100c3cada233d21d55462c.js?body=1" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+
+
+Started GET "/assets/app-6e605a0e353699d44a754125d4bce61b.js?body=1" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+
+
+Started GET "/assets/application-1c475806093e6242dac1cf338af247b4.js?body=1" for 127.0.0.1 at 2015-03-19 16:42:05 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-19 16:44:48 +0100
